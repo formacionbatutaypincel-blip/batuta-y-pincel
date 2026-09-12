@@ -80,11 +80,11 @@ export default function Servicios() {
 
         {/* Header sección */}
         <div className="text-center mb-14">
-          <span className="inline-block bg-orange-100 text-[#EA580C] text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+          <span className="inline-block bg-orange-100 text-[#1A8FB8] text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
             ¿Qué ofrecemos?
           </span>
           <h2 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4" style={{fontFamily: "'Arial Rounded MT Bold', Arial, sans-serif"}}>
-            Nuestros <span className="text-[#E53E1A]">servicios</span>
+            Nuestros <span className="text-[#25AFE6]">servicios</span>
           </h2>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
             Un espacio integral donde tu hijo aprende, se expresa y crece. 
@@ -112,7 +112,7 @@ export default function Servicios() {
           </p>
           <Link
             href="/servicios"
-            className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white px-8 py-3.5 rounded-full font-bold text-base transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 bg-[#25AFE6] hover:bg-[#1A8FB8] text-white px-8 py-3.5 rounded-full font-bold text-base transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
           >
             Ver todos los servicios
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -156,7 +156,7 @@ function ServiceCard({ servicio }: { servicio: typeof servicios[0] }) {
       </p>
 
       {/* Flecha hover */}
-      <div className="mt-5 flex items-center gap-1 text-sm font-semibold text-[#E53E1A] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <div className="mt-5 flex items-center gap-1 text-sm font-semibold text-[#25AFE6] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <span>Ver más</span>
         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>

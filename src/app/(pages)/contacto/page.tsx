@@ -16,7 +16,7 @@ const contactInfo = [
     title: "Dirección",
     value: "Carrera 4 # 5-51 Interior 5 Casa 1",
     sub: "Chía, Cundinamarca",
-    bg: "bg-[#E53E1A]",
+    bg: "bg-[#25AFE6]",
     href: "https://maps.google.com/?q=Carrera+4+5-51+Chia+Cundinamarca",
   },
   {
@@ -28,7 +28,7 @@ const contactInfo = [
     title: "Teléfonos",
     value: "317 657 1001",
     sub: "314 302 7066",
-    bg: "bg-[#F97316]",
+    bg: "bg-[#25AFE6]",
     href: "tel:+573176571001",
   },
   {
@@ -80,7 +80,7 @@ export default function ContactoPage() {
                   {item.title}
                 </h3>
                 {item.href ? (
-                  <a href={item.href} target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#E53E1A] transition-colors block">
+                  <a href={item.href} target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#25AFE6] transition-colors block">
                     {item.value}
                   </a>
                 ) : (
@@ -100,11 +100,11 @@ export default function ContactoPage() {
 
             {/* Formulario */}
             <div>
-              <span className="inline-block bg-orange-100 text-[#EA580C] text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+              <span className="inline-block bg-orange-100 text-[#1A8FB8] text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
                 Escríbenos
               </span>
               <h2 className="text-3xl font-extrabold text-gray-900 mb-2" style={{fontFamily: "'Arial Rounded MT Bold', Arial, sans-serif"}}>
-                Contáctanos <span className="text-[#E53E1A]">aquí</span>
+                Contáctanos <span className="text-[#25AFE6]">aquí</span>
               </h2>
               <p className="text-gray-500 mb-8 text-sm leading-relaxed">
                 Completa el formulario y te responderemos a la brevedad. También puedes escribirnos por WhatsApp para una respuesta más rápida.
@@ -116,11 +116,11 @@ export default function ContactoPage() {
             {/* Mapa + WhatsApp */}
             <div className="space-y-6">
               <div>
-                <span className="inline-block bg-orange-100 text-[#EA580C] text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+                <span className="inline-block bg-orange-100 text-[#1A8FB8] text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
                   Encuéntranos
                 </span>
                 <h2 className="text-3xl font-extrabold text-gray-900 mb-6" style={{fontFamily: "'Arial Rounded MT Bold', Arial, sans-serif"}}>
-                  Nuestra <span className="text-[#E53E1A]">ubicación</span>
+                  Nuestra <span className="text-[#25AFE6]">ubicación</span>
                 </h2>
               </div>
 
@@ -141,7 +141,7 @@ export default function ContactoPage() {
               {/* Dirección debajo del mapa */}
               <div className="bg-[#FFF8F5] rounded-2xl p-5 border border-orange-100">
                 <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 bg-[#E53E1A] rounded-xl flex items-center justify-center text-white flex-shrink-0">
+                  <div className="w-10 h-10 bg-[#25AFE6] rounded-xl flex items-center justify-center text-white flex-shrink-0">
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"/>
                     </svg>
@@ -154,7 +154,7 @@ export default function ContactoPage() {
                       href="https://maps.google.com/?q=Carrera+4+5-51+Chia+Cundinamarca"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#E53E1A] text-xs font-semibold mt-1 inline-block hover:underline"
+                      className="text-[#25AFE6] text-xs font-semibold mt-1 inline-block hover:underline"
                     >
                       Abrir en Google Maps →
                     </a>
@@ -212,7 +212,7 @@ function ContactForm() {
           <input
             type="text"
             placeholder="Tu nombre"
-            className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#F97316] focus:outline-none text-sm transition-colors"
+            className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#25AFE6] focus:outline-none text-sm transition-colors"
           />
         </div>
         <div>
@@ -222,7 +222,7 @@ function ContactForm() {
           <input
             type="email"
             placeholder="tu@email.com"
-            className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#F97316] focus:outline-none text-sm transition-colors"
+            className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#25AFE6] focus:outline-none text-sm transition-colors"
           />
         </div>
       </div>
@@ -234,14 +234,14 @@ function ContactForm() {
           <input
             type="tel"
             placeholder="300 000 0000"
-            className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#F97316] focus:outline-none text-sm transition-colors"
+            className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#25AFE6] focus:outline-none text-sm transition-colors"
           />
         </div>
         <div>
           <label className="block text-sm font-semibold text-gray-700 mb-1.5">
             Asunto <span className="text-red-500">*</span>
           </label>
-          <select className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#F97316] focus:outline-none text-sm transition-colors text-gray-600">
+          <select className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#25AFE6] focus:outline-none text-sm transition-colors text-gray-600">
             <option value="">Selecciona un tema</option>
             <option value="tareas">Dirección de tareas</option>
             <option value="musica">Academia de música</option>
@@ -259,12 +259,12 @@ function ContactForm() {
         <textarea
           rows={5}
           placeholder="Cuéntanos cómo podemos ayudarte..."
-          className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#F97316] focus:outline-none text-sm transition-colors resize-none"
+          className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#25AFE6] focus:outline-none text-sm transition-colors resize-none"
         />
       </div>
       <button
         type="button"
-        className="w-full bg-[#F97316] hover:bg-[#EA580C] text-white py-3.5 rounded-xl font-bold text-sm transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2"
+        className="w-full bg-[#25AFE6] hover:bg-[#1A8FB8] text-white py-3.5 rounded-xl font-bold text-sm transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2"
       >
         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
@@ -273,7 +273,7 @@ function ContactForm() {
       </button>
       <p className="text-xs text-gray-400 text-center">
         También puedes escribirnos directamente a{" "}
-        <a href="mailto:formacionbatutaypincel@gmail.com" className="text-[#E53E1A] hover:underline">
+        <a href="mailto:formacionbatutaypincel@gmail.com" className="text-[#25AFE6] hover:underline">
           formacionbatutaypincel@gmail.com
         </a>
       </p>

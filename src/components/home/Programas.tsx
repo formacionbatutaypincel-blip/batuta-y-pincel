@@ -74,11 +74,11 @@ export default function Programas() {
 
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-block bg-orange-100 text-[#EA580C] text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+          <span className="inline-block bg-orange-100 text-[#1A8FB8] text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
             Lo que ofrecemos
           </span>
           <h2 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4" style={{fontFamily: "'Arial Rounded MT Bold', Arial, sans-serif"}}>
-            Nuestros <span className="text-[#E53E1A]">programas</span>
+            Nuestros <span className="text-[#25AFE6]">programas</span>
           </h2>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
             Kindedo opera en Chía desde 1998 ofreciendo una formación integral 
@@ -97,7 +97,7 @@ export default function Programas() {
         <div className="text-center mt-14">
           <Link
             href="/inscripciones"
-            className="inline-flex items-center gap-2 bg-[#E53E1A] hover:bg-[#C53030] text-white px-8 py-4 rounded-full font-bold text-base transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 bg-[#25AFE6] hover:bg-[#1A8FB8] text-white px-8 py-4 rounded-full font-bold text-base transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
           >
             Reserva un cupo ahora
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -155,7 +155,7 @@ function ProgramaCard({ programa }: { programa: typeof programas[0] }) {
         {/* Link ver más */}
         <Link
           href="/servicios"
-          className={`inline-flex items-center gap-1 text-xs font-bold transition-colors text-gray-500 hover:text-[#E53E1A]`}
+          className={`inline-flex items-center gap-1 text-xs font-bold transition-colors text-gray-500 hover:text-[#25AFE6]`}
         >
           Ver detalles
           <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

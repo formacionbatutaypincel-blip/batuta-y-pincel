@@ -1,36 +1,37 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SITE_CONFIG } from "@/lib/constants";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[580px] flex items-center overflow-hidden bg-gradient-to-br from-[#FFF3ED] via-[#FFF8F5] to-[#FEF9EC]">
+    <section className="relative min-h-[580px] flex items-center overflow-hidden bg-gradient-to-br from-[#EBF8FD] via-[#F0FBFF] to-[#EBF8FD]">
 
       {/* Decorativos de fondo */}
-      <div className="absolute top-10 right-10 w-64 h-64 rounded-full bg-[#F97316] opacity-[0.07] blur-2xl"/>
-      <div className="absolute bottom-10 left-10 w-48 h-48 rounded-full bg-[#E53E1A] opacity-[0.06] blur-2xl"/>
+      <div className="absolute top-10 right-10 w-64 h-64 rounded-full bg-[#25AFE6] opacity-[0.07] blur-2xl"/>
+      <div className="absolute bottom-10 left-10 w-48 h-48 rounded-full bg-[#25AFE6] opacity-[0.06] blur-2xl"/>
       <div className="absolute top-1/2 left-1/3 w-32 h-32 rounded-full bg-[#FBBF24] opacity-[0.08] blur-xl"/>
 
       {/* Formas decorativas tipo Kindedo */}
-      <div className="absolute top-8 left-[45%] w-6 h-6 rounded-full bg-[#F97316] opacity-40"/>
+      <div className="absolute top-8 left-[45%] w-6 h-6 rounded-full bg-[#25AFE6] opacity-40"/>
       <div className="absolute top-24 right-[30%] w-4 h-4 rounded-full bg-[#FBBF24] opacity-50"/>
-      <div className="absolute bottom-20 right-[20%] w-8 h-8 rounded-full bg-[#E53E1A] opacity-30"/>
-      <div className="absolute bottom-32 left-[25%] w-5 h-5 rounded-full bg-[#F97316] opacity-35"/>
+      <div className="absolute bottom-20 right-[20%] w-8 h-8 rounded-full bg-[#25AFE6] opacity-30"/>
+      <div className="absolute bottom-32 left-[25%] w-5 h-5 rounded-full bg-[#25AFE6] opacity-35"/>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
 
           {/* Texto izquierda */}
           <div className="space-y-6">
-            <div className="inline-flex items-center gap-2 bg-orange-100 text-[#EA580C] px-4 py-1.5 rounded-full text-sm font-semibold">
+            <div className="inline-flex items-center gap-2 bg-orange-100 text-[#1A8FB8] px-4 py-1.5 rounded-full text-sm font-semibold">
               <span>🎵</span>
               <span>Desde 1998 en Chía, Cundinamarca</span>
             </div>
 
             <h1 className="text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight" style={{fontFamily: "'Arial Rounded MT Bold', Arial, sans-serif"}}>
               Dirección de tareas,{" "}
-              <span className="text-[#E53E1A]">música</span>{" "}
+              <span className="text-[#25AFE6]">música</span>{" "}
               y{" "}
-              <span className="text-[#F97316]">arte</span>{" "}
+              <span className="text-[#25AFE6]">arte</span>{" "}
               para tu hijo
             </h1>
 
@@ -54,7 +55,7 @@ export default function Hero() {
             <div className="flex flex-wrap gap-3 pt-2">
               <Link
                 href="/inscripciones"
-                className="bg-[#F97316] hover:bg-[#EA580C] text-white px-8 py-3.5 rounded-full font-bold text-base transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
+                className="bg-[#25AFE6] hover:bg-[#1A8FB8] text-white px-8 py-3.5 rounded-full font-bold text-base transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
               >
                 Inscribe a tu hijo
               </Link>
@@ -76,17 +77,22 @@ export default function Hero() {
           <div className="relative flex justify-center lg:justify-end">
             {/* Placeholder imagen — reemplazar con foto real */}
             <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-orange-200 to-red-200 flex items-center justify-center overflow-hidden border-8 border-white shadow-2xl">
-                {/* Aquí va next/image con foto real de los niños */}
-                <div className="text-center text-gray-500">
-                  <div className="text-6xl mb-3">👨‍👩‍👧‍👦</div>
-                  <p className="text-sm font-medium">Foto de niños<br/>en actividades</p>
-                </div>
+              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-8 border-white shadow-2xl">
+                <Image
+                  src="/images/gallery/foto-portada.webp"
+                  alt="Niños en actividades de Batuta y Pincel, Chía"
+                  width={800}
+                  height={800}
+                  className="w-full h-full object-cover object-top"
+                  priority
+                  quality={100}
+                  unoptimized
+                />
               </div>
 
               {/* Badge flotante 1 — años */}
               <div className="absolute -top-4 -left-4 bg-white rounded-2xl shadow-lg px-4 py-3 flex items-center gap-2">
-                <div className="w-10 h-10 bg-[#E53E1A] rounded-xl flex items-center justify-center text-white font-extrabold text-lg">
+                <div className="w-10 h-10 bg-[#25AFE6] rounded-xl flex items-center justify-center text-white font-extrabold text-lg">
                   26
                 </div>
                 <div className="leading-tight">
@@ -97,7 +103,7 @@ export default function Hero() {
 
               {/* Badge flotante 2 — niños */}
               <div className="absolute -bottom-2 -left-6 bg-white rounded-2xl shadow-lg px-4 py-3 flex items-center gap-2">
-                <div className="w-10 h-10 bg-[#F97316] rounded-xl flex items-center justify-center text-2xl">
+                <div className="w-10 h-10 bg-[#25AFE6] rounded-xl flex items-center justify-center text-2xl">
                   👧
                 </div>
                 <div className="leading-tight">
@@ -107,7 +113,7 @@ export default function Hero() {
               </div>
 
               {/* Badge flotante 3 — Chía */}
-              <div className="absolute top-8 -right-4 bg-[#F97316] text-white rounded-2xl shadow-lg px-4 py-3">
+              <div className="absolute top-8 -right-4 bg-[#25AFE6] text-white rounded-2xl shadow-lg px-4 py-3">
                 <div className="text-xs font-bold">📍 Chía</div>
                 <div className="text-xs opacity-90">Cundinamarca</div>
               </div>

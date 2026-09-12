@@ -13,10 +13,10 @@ export default function Footer() {
   return (
     <footer>
       {/* Banner CTA Newsletter */}
-      <div className="bg-[#E53E1A] py-14 px-4 relative overflow-hidden">
+      <div className="bg-[#25AFE6] py-14 px-4 relative overflow-hidden">
         {/* Decorativos */}
         <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-white opacity-5"/>
-        <div className="absolute bottom-0 left-10 w-40 h-40 rounded-full bg-[#F97316] opacity-20"/>
+        <div className="absolute bottom-0 left-10 w-40 h-40 rounded-full bg-[#25AFE6] opacity-20"/>
 
         <div className="max-w-3xl mx-auto text-center relative z-10">
           <h2 className="text-2xl lg:text-3xl font-extrabold text-white mb-3" style={{fontFamily: "'Arial Rounded MT Bold', Arial, sans-serif"}}>
@@ -31,7 +31,7 @@ export default function Footer() {
               placeholder="Tu correo electrónico"
               className="flex-1 px-5 py-3.5 rounded-full text-gray-800 text-sm outline-none border-2 border-transparent focus:border-orange-300"
             />
-            <button className="bg-[#F97316] hover:bg-[#EA580C] text-white px-7 py-3.5 rounded-full font-bold text-sm transition-all whitespace-nowrap shadow-md">
+            <button className="bg-[#25AFE6] hover:bg-[#1A8FB8] text-white px-7 py-3.5 rounded-full font-bold text-sm transition-all whitespace-nowrap shadow-md">
               Suscribirme
             </button>
           </div>
@@ -46,8 +46,8 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <svg width="40" height="40" viewBox="0 0 48 48" fill="none">
-                <circle cx="18" cy="20" r="14" fill="#E53E1A" opacity="0.9"/>
-                <circle cx="30" cy="20" r="14" fill="#F97316" opacity="0.85"/>
+                <circle cx="18" cy="20" r="14" fill="#25AFE6" opacity="0.9"/>
+                <circle cx="30" cy="20" r="14" fill="#25AFE6" opacity="0.85"/>
                 <circle cx="24" cy="32" r="14" fill="#FBBF24" opacity="0.85"/>
                 <text x="14" y="38" fontFamily="Georgia, serif" fontSize="28" fill="white" fontWeight="400" opacity="0.95">𝄞</text>
                 <g transform="translate(30, 10) rotate(35)">
@@ -72,7 +72,7 @@ export default function Footer() {
                 href={SITE_CONFIG.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 bg-gray-800 hover:bg-[#E53E1A] rounded-full flex items-center justify-center transition-colors"
+                className="w-9 h-9 bg-gray-800 hover:bg-[#25AFE6] rounded-full flex items-center justify-center transition-colors"
                 aria-label="Facebook"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -83,7 +83,7 @@ export default function Footer() {
                 href={SITE_CONFIG.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 bg-gray-800 hover:bg-[#E53E1A] rounded-full flex items-center justify-center transition-colors"
+                className="w-9 h-9 bg-gray-800 hover:bg-[#25AFE6] rounded-full flex items-center justify-center transition-colors"
                 aria-label="Instagram"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -116,9 +116,9 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-[#F97316] text-sm transition-colors flex items-center gap-2"
+                    className="text-gray-400 hover:text-[#25AFE6] text-sm transition-colors flex items-center gap-2"
                   >
-                    <span className="w-1 h-1 bg-[#F97316] rounded-full"/>
+                    <span className="w-1 h-1 bg-[#25AFE6] rounded-full"/>
                     {link.label}
                   </Link>
                 </li>
@@ -126,9 +126,9 @@ export default function Footer() {
               <li>
                 <Link
                   href="/donar"
-                  className="text-gray-400 hover:text-[#F97316] text-sm transition-colors flex items-center gap-2"
+                  className="text-gray-400 hover:text-[#25AFE6] text-sm transition-colors flex items-center gap-2"
                 >
-                  <span className="w-1 h-1 bg-[#F97316] rounded-full"/>
+                  <span className="w-1 h-1 bg-[#25AFE6] rounded-full"/>
                   Donar
                 </Link>
               </li>
@@ -145,9 +145,9 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-[#F97316] text-sm transition-colors flex items-center gap-2"
+                    className="text-gray-400 hover:text-[#25AFE6] text-sm transition-colors flex items-center gap-2"
                   >
-                    <span className="w-1 h-1 bg-[#F97316] rounded-full"/>
+                    <span className="w-1 h-1 bg-[#25AFE6] rounded-full"/>
                     {link.label}
                   </Link>
                 </li>
@@ -162,7 +162,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <div className="w-8 h-8 bg-[#E53E1A] rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-8 h-8 bg-[#25AFE6] rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                   <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"/>
                   </svg>
@@ -173,17 +173,17 @@ export default function Footer() {
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <div className="w-8 h-8 bg-[#F97316] rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="w-8 h-8 bg-[#25AFE6] rounded-lg flex items-center justify-center flex-shrink-0">
                   <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
                   </svg>
                 </div>
                 <div>
                   <p className="text-gray-400 text-xs mb-0.5">Teléfonos</p>
-                  <a href={`tel:+57${SITE_CONFIG.phone1.replace(/\s/g,"")}`} className="text-gray-300 text-sm hover:text-[#F97316] block transition-colors">
+                  <a href={`tel:+57${SITE_CONFIG.phone1.replace(/\s/g,"")}`} className="text-gray-300 text-sm hover:text-[#25AFE6] block transition-colors">
                     {SITE_CONFIG.phone1}
                   </a>
-                  <a href={`tel:+57${SITE_CONFIG.phone2.replace(/\s/g,"")}`} className="text-gray-300 text-sm hover:text-[#F97316] block transition-colors">
+                  <a href={`tel:+57${SITE_CONFIG.phone2.replace(/\s/g,"")}`} className="text-gray-300 text-sm hover:text-[#25AFE6] block transition-colors">
                     {SITE_CONFIG.phone2}
                   </a>
                 </div>
@@ -197,7 +197,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="text-gray-400 text-xs mb-0.5">Email</p>
-                  <a href={`mailto:${SITE_CONFIG.email}`} className="text-gray-300 text-sm hover:text-[#F97316] transition-colors break-all">
+                  <a href={`mailto:${SITE_CONFIG.email}`} className="text-gray-300 text-sm hover:text-[#25AFE6] transition-colors break-all">
                     {SITE_CONFIG.email}
                   </a>
                 </div>

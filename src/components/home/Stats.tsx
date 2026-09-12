@@ -11,7 +11,7 @@ export default function Stats() {
               className="flex flex-col items-center text-center p-8 rounded-2xl bg-gradient-to-br from-orange-50 to-red-50 border border-orange-100"
             >
               <span className="text-4xl mb-3">{stat.icon}</span>
-              <div className="text-5xl font-extrabold text-[#E53E1A] mb-2" style={{fontFamily: "'Arial Rounded MT Bold', Arial, sans-serif"}}>
+              <div className="text-5xl font-extrabold text-[#25AFE6] mb-2" style={{fontFamily: "'Arial Rounded MT Bold', Arial, sans-serif"}}>
                 {stat.number}
               </div>
               <div className="text-gray-600 font-medium">{stat.label}</div>

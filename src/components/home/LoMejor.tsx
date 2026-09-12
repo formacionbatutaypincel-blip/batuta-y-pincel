@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const beneficios = [
   {
@@ -55,19 +56,21 @@ export default function LoMejor() {
 
             {/* Imagen principal circular */}
             <div className="relative z-10">
-              <div className="w-72 h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-8 border-white shadow-2xl bg-gradient-to-br from-orange-200 to-red-200 flex items-center justify-center">
-                {/* Reemplazar con next/image cuando tengan foto real */}
-                <div className="text-center text-gray-500 p-8">
-                  <div className="text-6xl mb-3">👩‍🏫</div>
-                  <p className="text-sm font-medium leading-snug">
-                    Foto de profesora<br/>con niños
-                  </p>
-                </div>
+              <div className="w-72 h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-8 border-white shadow-2xl">
+                <Image
+                  src="/images/gallery/profesora-batuta.webp"
+                  alt="Niños estudiando en dirección de tareas Batuta y Pincel"
+                  width={800}
+                  height={800}
+                  className="w-full h-full object-cover object-center"
+                  quality={100}
+                  unoptimized
+                />
               </div>
 
               {/* Badge stat 1 */}
               <div className="absolute -top-3 -right-6 bg-white rounded-2xl shadow-lg px-4 py-3 flex items-center gap-3 border border-orange-100">
-                <div className="w-12 h-12 bg-[#E53E1A] rounded-xl flex items-center justify-center text-white font-extrabold text-xl">
+                <div className="w-12 h-12 bg-[#25AFE6] rounded-xl flex items-center justify-center text-white font-extrabold text-xl">
                   26
                 </div>
                 <div className="leading-tight">
@@ -78,7 +81,7 @@ export default function LoMejor() {
 
               {/* Badge stat 2 */}
               <div className="absolute -bottom-3 -left-6 bg-white rounded-2xl shadow-lg px-4 py-3 flex items-center gap-3 border border-orange-100">
-                <div className="w-12 h-12 bg-[#F97316] rounded-xl flex items-center justify-center text-2xl">
+                <div className="w-12 h-12 bg-[#25AFE6] rounded-xl flex items-center justify-center text-2xl">
                   👧
                 </div>
                 <div className="leading-tight">
@@ -88,15 +91,15 @@ export default function LoMejor() {
               </div>
 
               {/* Badge stat 3 */}
-              <div className="absolute bottom-16 -right-8 bg-[#F97316] text-white rounded-2xl shadow-lg px-4 py-3 border border-orange-400">
+              <div className="absolute bottom-16 -right-8 bg-[#25AFE6] text-white rounded-2xl shadow-lg px-4 py-3 border border-orange-400">
                 <div className="text-sm font-bold">🏆 5 programas</div>
                 <div className="text-xs opacity-90">Arte · Música · Tareas</div>
               </div>
 
               {/* Puntos decorativos */}
               <div className="absolute top-4 -left-4 w-5 h-5 rounded-full bg-[#FBBF24] opacity-70"/>
-              <div className="absolute -top-8 left-16 w-3 h-3 rounded-full bg-[#E53E1A] opacity-50"/>
-              <div className="absolute -bottom-8 right-10 w-4 h-4 rounded-full bg-[#F97316] opacity-60"/>
+              <div className="absolute -top-8 left-16 w-3 h-3 rounded-full bg-[#25AFE6] opacity-50"/>
+              <div className="absolute -bottom-8 right-10 w-4 h-4 rounded-full bg-[#25AFE6] opacity-60"/>
             </div>
           </div>
 
@@ -105,12 +108,12 @@ export default function LoMejor() {
 
             {/* Header */}
             <div>
-              <span className="inline-block bg-orange-100 text-[#EA580C] text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+              <span className="inline-block bg-orange-100 text-[#1A8FB8] text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
                 ¿Por qué elegirnos?
               </span>
               <h2 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4 leading-tight" style={{fontFamily: "'Arial Rounded MT Bold', Arial, sans-serif"}}>
                 Lo mejor para{" "}
-                <span className="text-[#E53E1A]">tu hijo</span>
+                <span className="text-[#25AFE6]">tu hijo</span>
               </h2>
               <p className="text-gray-500 text-base leading-relaxed">
                 Creemos que cada niño es único. Por eso ofrecemos un espacio donde 
@@ -141,10 +144,10 @@ export default function LoMejor() {
                   key={i}
                   className="bg-white rounded-xl border border-orange-100 overflow-hidden group"
                 >
-                  <summary className="flex items-center justify-between px-5 py-4 cursor-pointer text-sm font-semibold text-gray-800 hover:text-[#E53E1A] transition-colors list-none">
+                  <summary className="flex items-center justify-between px-5 py-4 cursor-pointer text-sm font-semibold text-gray-800 hover:text-[#25AFE6] transition-colors list-none">
                     <span>{faq.question}</span>
                     <svg
-                      className="w-4 h-4 text-[#F97316] flex-shrink-0 group-open:rotate-180 transition-transform duration-200"
+                      className="w-4 h-4 text-[#25AFE6] flex-shrink-0 group-open:rotate-180 transition-transform duration-200"
                       fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7"/>
@@ -161,13 +164,13 @@ export default function LoMejor() {
             <div className="flex flex-wrap gap-3 pt-2">
               <Link
                 href="/inscripciones"
-                className="bg-[#F97316] hover:bg-[#EA580C] text-white px-7 py-3 rounded-full font-bold text-sm transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
+                className="bg-[#25AFE6] hover:bg-[#1A8FB8] text-white px-7 py-3 rounded-full font-bold text-sm transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
               >
                 Inscribe a tu hijo
               </Link>
               <Link
                 href="/nosotros"
-                className="flex items-center gap-1.5 bg-white hover:bg-orange-50 text-[#E53E1A] border-2 border-[#E53E1A] px-7 py-3 rounded-full font-bold text-sm transition-all"
+                className="flex items-center gap-1.5 bg-white hover:bg-orange-50 text-[#25AFE6] border-2 border-[#25AFE6] px-7 py-3 rounded-full font-bold text-sm transition-all"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>

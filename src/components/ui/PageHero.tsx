@@ -8,7 +8,7 @@ interface PageHeroProps {
 
 export default function PageHero({ title, breadcrumb, description }: PageHeroProps) {
   return (
-    <section className="relative bg-gradient-to-br from-[#E53E1A] via-[#F97316] to-[#FBBF24] py-16 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-[#25AFE6] via-[#25AFE6] to-[#FBBF24] py-16 overflow-hidden">
       {/* Decorativos */}
       <div className="absolute top-0 right-0 w-72 h-72 rounded-full bg-white opacity-5"/>
       <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full bg-white opacity-5"/>

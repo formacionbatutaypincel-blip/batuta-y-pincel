@@ -49,7 +49,7 @@ export default function NosotrosPage() {
                   </div>
                 </div>
                 {/* Badge año */}
-                <div className="absolute -bottom-4 -right-4 bg-[#E53E1A] text-white rounded-2xl px-5 py-3 shadow-lg">
+                <div className="absolute -bottom-4 -right-4 bg-[#25AFE6] text-white rounded-2xl px-5 py-3 shadow-lg">
                   <div className="text-2xl font-extrabold">1998</div>
                   <div className="text-xs opacity-90">Fundación</div>
                 </div>
@@ -61,11 +61,11 @@ export default function NosotrosPage() {
             {/* Texto historia */}
             <div className="space-y-6">
               <div>
-                <span className="inline-block bg-orange-100 text-[#EA580C] text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+                <span className="inline-block bg-orange-100 text-[#1A8FB8] text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
                   Nuestra historia
                 </span>
                 <h2 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-6 leading-tight" style={{fontFamily: "'Arial Rounded MT Bold', Arial, sans-serif"}}>
-                  De <span className="text-[#E53E1A]">3 niños</span> a un centro integral en Chía
+                  De <span className="text-[#25AFE6]">3 niños</span> a un centro integral en Chía
                 </h2>
               </div>
               <div className="space-y-4 text-gray-600 leading-relaxed">
@@ -85,13 +85,13 @@ export default function NosotrosPage() {
                   y vacaciones. Hace aproximadamente 10 años, bautizamos el lugar como <em>Batuta y Pincel</em>: 
                   "Batuta" por la música y "Pincel" por el arte.
                 </p>
-                <blockquote className="border-l-4 border-[#F97316] pl-4 italic text-gray-500">
+                <blockquote className="border-l-4 border-[#25AFE6] pl-4 italic text-gray-500">
                   "La música, el arte y las danzas nos brindan seguridad y amor por nosotros mismos y por los demás."
                 </blockquote>
               </div>
               <Link
                 href="/inscripciones"
-                className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white px-7 py-3.5 rounded-full font-bold text-sm transition-all shadow-md hover:shadow-lg"
+                className="inline-flex items-center gap-2 bg-[#25AFE6] hover:bg-[#1A8FB8] text-white px-7 py-3.5 rounded-full font-bold text-sm transition-all shadow-md hover:shadow-lg"
               >
                 Inscribe a tu hijo
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -107,11 +107,11 @@ export default function NosotrosPage() {
       <section className="py-20 bg-[#FFF8F5]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <span className="inline-block bg-orange-100 text-[#EA580C] text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+            <span className="inline-block bg-orange-100 text-[#1A8FB8] text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
               Quiénes somos
             </span>
             <h2 className="text-3xl lg:text-4xl font-extrabold text-gray-900" style={{fontFamily: "'Arial Rounded MT Bold', Arial, sans-serif"}}>
-              Misión y <span className="text-[#E53E1A]">Visión</span>
+              Misión y <span className="text-[#25AFE6]">Visión</span>
             </h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
@@ -151,11 +151,11 @@ export default function NosotrosPage() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <span className="inline-block bg-orange-100 text-[#EA580C] text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+            <span className="inline-block bg-orange-100 text-[#1A8FB8] text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
               26 años de historia
             </span>
             <h2 className="text-3xl lg:text-4xl font-extrabold text-gray-900" style={{fontFamily: "'Arial Rounded MT Bold', Arial, sans-serif"}}>
-              Nuestra <span className="text-[#E53E1A]">trayectoria</span>
+              Nuestra <span className="text-[#25AFE6]">trayectoria</span>
             </h2>
           </div>
           <div className="relative">
@@ -165,7 +165,7 @@ export default function NosotrosPage() {
               {hitos.map((hito, i) => (
                 <div key={i} className="flex gap-6 items-start">
                   {/* Año círculo */}
-                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#E53E1A] flex items-center justify-center shadow-md z-10">
+                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#25AFE6] flex items-center justify-center shadow-md z-10">
                     <span className="text-white text-xs font-extrabold text-center leading-tight">{hito.year}</span>
                   </div>
                   {/* Contenido */}
@@ -186,11 +186,11 @@ export default function NosotrosPage() {
       <section className="py-20 bg-[#FFF8F5]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <span className="inline-block bg-orange-100 text-[#EA580C] text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+            <span className="inline-block bg-orange-100 text-[#1A8FB8] text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
               Lo que nos guía
             </span>
             <h2 className="text-3xl lg:text-4xl font-extrabold text-gray-900" style={{fontFamily: "'Arial Rounded MT Bold', Arial, sans-serif"}}>
-              Nuestros <span className="text-[#E53E1A]">valores</span>
+              Nuestros <span className="text-[#25AFE6]">valores</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -208,7 +208,7 @@ export default function NosotrosPage() {
       </section>
 
       {/* CTA final */}
-      <section className="py-16 bg-[#E53E1A]">
+      <section className="py-16 bg-[#25AFE6]">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-2xl lg:text-3xl font-extrabold text-white mb-4" style={{fontFamily: "'Arial Rounded MT Bold', Arial, sans-serif"}}>
             ¿Quieres que tu hijo haga parte de nuestra historia?
@@ -219,13 +219,13 @@ export default function NosotrosPage() {
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
               href="/inscripciones"
-              className="bg-white text-[#E53E1A] hover:bg-orange-50 px-8 py-3.5 rounded-full font-bold text-base transition-all shadow-md hover:shadow-lg"
+              className="bg-white text-[#25AFE6] hover:bg-orange-50 px-8 py-3.5 rounded-full font-bold text-base transition-all shadow-md hover:shadow-lg"
             >
               Inscribe a tu hijo
             </Link>
             <Link
               href="/contacto"
-              className="border-2 border-white text-white hover:bg-white hover:text-[#E53E1A] px-8 py-3.5 rounded-full font-bold text-base transition-all"
+              className="border-2 border-white text-white hover:bg-white hover:text-[#25AFE6] px-8 py-3.5 rounded-full font-bold text-base transition-all"
             >
               Contáctanos
             </Link>

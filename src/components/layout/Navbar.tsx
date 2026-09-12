@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { NAV_LINKS, SITE_CONFIG } from "@/lib/constants";
 
@@ -14,32 +15,16 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
 
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 flex-shrink-0">
-            {/* Logo SVG inline — clave de sol + nombre */}
-            <div className="flex items-center gap-2">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                {/* Círculos de colores */}
-                <circle cx="18" cy="20" r="14" fill="#E53E1A" opacity="0.9"/>
-                <circle cx="30" cy="20" r="14" fill="#F97316" opacity="0.85"/>
-                <circle cx="24" cy="32" r="14" fill="#FBBF24" opacity="0.85"/>
-                {/* Clave de sol blanca */}
-                <text x="14" y="38" fontFamily="Georgia, serif" fontSize="28" fill="white" fontWeight="400" opacity="0.95">𝄞</text>
-                {/* Pincel blanco */}
-                <g transform="translate(30, 10) rotate(35)">
-                  <rect x="0" y="0" width="4" height="16" rx="2" fill="white" opacity="0.95"/>
-                  <polygon points="0,16 4,16 2,22" fill="white" opacity="0.95"/>
-                </g>
-              </svg>
-              <div className="leading-tight">
-                <div className="text-xl font-extrabold text-[#E53E1A] tracking-tight" style={{fontFamily: "'Arial Rounded MT Bold', Arial, sans-serif"}}>
-                  Batuta y Pincel
-                </div>
-                <div className="text-[10px] text-gray-500 tracking-wide uppercase">
-                  Arte · Música · Tareas
-                </div>
-              </div>
-            </div>
+          {/* Logo real */}
+          <Link href="/" className="flex items-center flex-shrink-0">
+            <Image
+              src="/images/logo-batuta-pincel.png"
+              alt="Batuta y Pincel — Arte, música y tareas en Chía"
+              width={251}
+              height={82}
+              className="h-12 w-auto"
+              priority
+            />
           </Link>
 
           {/* Nav links desktop */}
@@ -50,8 +35,8 @@ export default function Navbar() {
                 href={link.href}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                   pathname === link.href
-                    ? "text-[#E53E1A] bg-red-50"
-                    : "text-gray-600 hover:text-[#E53E1A] hover:bg-red-50"
+                    ? "text-[#25AFE6] bg-blue-50"
+                    : "text-gray-600 hover:text-[#25AFE6] hover:bg-blue-50"
                 }`}
               >
                 {link.label}
@@ -61,7 +46,6 @@ export default function Navbar() {
 
           {/* CTA + WhatsApp desktop */}
           <div className="hidden lg:flex items-center gap-3">
-            {/* WhatsApp */}
             <a
               href={`https://wa.me/${SITE_CONFIG.whatsapp1}`}
               target="_blank"
@@ -73,10 +57,9 @@ export default function Navbar() {
               </svg>
               <span className="font-medium">{SITE_CONFIG.phone1}</span>
             </a>
-            {/* Inscríbete */}
             <Link
               href="/inscripciones"
-              className="bg-[#F97316] hover:bg-[#EA580C] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-colors shadow-sm"
+              className="bg-[#25AFE6] hover:bg-[#1A8FB8] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-colors shadow-sm"
             >
               Inscríbete
             </Link>
@@ -111,8 +94,8 @@ export default function Navbar() {
               onClick={() => setMenuOpen(false)}
               className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
                 pathname === link.href
-                  ? "text-[#E53E1A] bg-red-50"
-                  : "text-gray-600 hover:text-[#E53E1A] hover:bg-red-50"
+                  ? "text-[#25AFE6] bg-blue-50"
+                  : "text-gray-600 hover:text-[#25AFE6] hover:bg-blue-50"
               }`}
             >
               {link.label}
@@ -133,7 +116,7 @@ export default function Navbar() {
             <Link
               href="/inscripciones"
               onClick={() => setMenuOpen(false)}
-              className="block text-center bg-[#F97316] hover:bg-[#EA580C] text-white px-5 py-3 rounded-full text-sm font-semibold transition-colors"
+              className="block text-center bg-[#25AFE6] hover:bg-[#1A8FB8] text-white px-5 py-3 rounded-full text-sm font-semibold transition-colors"
             >
               Inscríbete ahora
             </Link>

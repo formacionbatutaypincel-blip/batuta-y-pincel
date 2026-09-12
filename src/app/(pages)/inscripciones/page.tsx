@@ -51,11 +51,11 @@ export default function InscripcionesPage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="inline-block bg-orange-100 text-[#EA580C] text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+            <span className="inline-block bg-orange-100 text-[#1A8FB8] text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
               Proceso de inscripción
             </span>
             <h2 className="text-3xl font-extrabold text-gray-900" style={{fontFamily: "'Arial Rounded MT Bold', Arial, sans-serif"}}>
-              ¿Cómo <span className="text-[#E53E1A]">funciona</span>?
+              ¿Cómo <span className="text-[#25AFE6]">funciona</span>?
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -69,7 +69,7 @@ export default function InscripcionesPage() {
                   <div className="w-16 h-16 bg-[#FFF8F5] border-2 border-orange-200 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4">
                     {paso.icon}
                   </div>
-                  <div className="w-6 h-6 bg-[#E53E1A] rounded-full flex items-center justify-center text-white text-xs font-extrabold mx-auto mb-3">
+                  <div className="w-6 h-6 bg-[#25AFE6] rounded-full flex items-center justify-center text-white text-xs font-extrabold mx-auto mb-3">
                     {i + 1}
                   </div>
                   <h3 className="font-extrabold text-gray-900 mb-2 text-sm" style={{fontFamily: "'Arial Rounded MT Bold', Arial, sans-serif"}}>
@@ -92,11 +92,11 @@ export default function InscripcionesPage() {
             <div className="lg:col-span-2">
               <div className="bg-white rounded-3xl p-8 border-2 border-orange-100 shadow-sm">
                 <div className="mb-8">
-                  <span className="inline-block bg-orange-100 text-[#EA580C] text-sm font-semibold px-4 py-1.5 rounded-full mb-3">
+                  <span className="inline-block bg-orange-100 text-[#1A8FB8] text-sm font-semibold px-4 py-1.5 rounded-full mb-3">
                     Formulario de inscripción
                   </span>
                   <h2 className="text-2xl font-extrabold text-gray-900" style={{fontFamily: "'Arial Rounded MT Bold', Arial, sans-serif"}}>
-                    Datos del <span className="text-[#E53E1A]">estudiante</span>
+                    Datos del <span className="text-[#25AFE6]">estudiante</span>
                   </h2>
                 </div>
 
@@ -107,13 +107,13 @@ export default function InscripcionesPage() {
                       <label className="block text-sm font-semibold text-gray-700 mb-1.5">
                         Nombre del niño/a <span className="text-red-500">*</span>
                       </label>
-                      <input type="text" placeholder="Nombre completo" className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#F97316] focus:outline-none text-sm transition-colors"/>
+                      <input type="text" placeholder="Nombre completo" className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#25AFE6] focus:outline-none text-sm transition-colors"/>
                     </div>
                     <div>
                       <label className="block text-sm font-semibold text-gray-700 mb-1.5">
                         Edad <span className="text-red-500">*</span>
                       </label>
-                      <input type="number" placeholder="Ej: 8" min="4" max="18" className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#F97316] focus:outline-none text-sm transition-colors"/>
+                      <input type="number" placeholder="Ej: 8" min="4" max="18" className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#25AFE6] focus:outline-none text-sm transition-colors"/>
                     </div>
                   </div>
 
@@ -121,7 +121,7 @@ export default function InscripcionesPage() {
                     <label className="block text-sm font-semibold text-gray-700 mb-1.5">
                       Grado escolar <span className="text-red-500">*</span>
                     </label>
-                    <select className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#F97316] focus:outline-none text-sm transition-colors text-gray-600">
+                    <select className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#25AFE6] focus:outline-none text-sm transition-colors text-gray-600">
                       <option value="">Selecciona el grado</option>
                       {grados.map((g, i) => <option key={i} value={g}>{g}</option>)}
                     </select>
@@ -131,7 +131,7 @@ export default function InscripcionesPage() {
                     <label className="block text-sm font-semibold text-gray-700 mb-1.5">
                       Colegio donde estudia
                     </label>
-                    <input type="text" placeholder="Nombre del colegio" className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#F97316] focus:outline-none text-sm transition-colors"/>
+                    <input type="text" placeholder="Nombre del colegio" className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#25AFE6] focus:outline-none text-sm transition-colors"/>
                   </div>
 
                   {/* Separador */}
@@ -144,13 +144,13 @@ export default function InscripcionesPage() {
                         <label className="block text-sm font-semibold text-gray-700 mb-1.5">
                           Nombre completo <span className="text-red-500">*</span>
                         </label>
-                        <input type="text" placeholder="Tu nombre completo" className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#F97316] focus:outline-none text-sm transition-colors"/>
+                        <input type="text" placeholder="Tu nombre completo" className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#25AFE6] focus:outline-none text-sm transition-colors"/>
                       </div>
                       <div>
                         <label className="block text-sm font-semibold text-gray-700 mb-1.5">
                           Teléfono / WhatsApp <span className="text-red-500">*</span>
                         </label>
-                        <input type="tel" placeholder="300 000 0000" className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#F97316] focus:outline-none text-sm transition-colors"/>
+                        <input type="tel" placeholder="300 000 0000" className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#25AFE6] focus:outline-none text-sm transition-colors"/>
                       </div>
                     </div>
                   </div>
@@ -159,7 +159,7 @@ export default function InscripcionesPage() {
                     <label className="block text-sm font-semibold text-gray-700 mb-1.5">
                       Correo electrónico <span className="text-red-500">*</span>
                     </label>
-                    <input type="email" placeholder="tu@email.com" className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#F97316] focus:outline-none text-sm transition-colors"/>
+                    <input type="email" placeholder="tu@email.com" className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#25AFE6] focus:outline-none text-sm transition-colors"/>
                   </div>
 
                   {/* Programa */}
@@ -181,12 +181,12 @@ export default function InscripcionesPage() {
                     <label className="block text-sm font-semibold text-gray-700 mb-1.5">
                       ¿Alguna nota adicional?
                     </label>
-                    <textarea rows={3} placeholder="Alergias, necesidades especiales, horario preferido..." className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#F97316] focus:outline-none text-sm transition-colors resize-none"/>
+                    <textarea rows={3} placeholder="Alergias, necesidades especiales, horario preferido..." className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#25AFE6] focus:outline-none text-sm transition-colors resize-none"/>
                   </div>
 
                   <button
                     type="button"
-                    className="w-full bg-[#F97316] hover:bg-[#EA580C] text-white py-4 rounded-xl font-extrabold text-base transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2"
+                    className="w-full bg-[#25AFE6] hover:bg-[#1A8FB8] text-white py-4 rounded-xl font-extrabold text-base transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2"
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
@@ -233,15 +233,15 @@ export default function InscripcionesPage() {
                 </h3>
                 <div className="space-y-2 text-sm text-gray-600">
                   <div className="flex items-start gap-2">
-                    <span className="text-[#F97316] font-bold min-w-fit">Lun–Vie:</span>
+                    <span className="text-[#25AFE6] font-bold min-w-fit">Lun–Vie:</span>
                     <span>12:00 pm – 6:00 pm</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-[#F97316] font-bold min-w-fit">Sábados:</span>
+                    <span className="text-[#25AFE6] font-bold min-w-fit">Sábados:</span>
                     <span>Música y danzas (estudiantes activos)</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-[#F97316] font-bold min-w-fit">Vacac.:</span>
+                    <span className="text-[#25AFE6] font-bold min-w-fit">Vacac.:</span>
                     <span>Horario especial según temporada</span>
                   </div>
                 </div>
@@ -276,7 +276,7 @@ export default function InscripcionesPage() {
                 </p>
                 <Link
                   href="/contacto"
-                  className="text-[#E53E1A] text-xs font-semibold hover:underline"
+                  className="text-[#25AFE6] text-xs font-semibold hover:underline"
                 >
                   Ver mapa →
                 </Link>
